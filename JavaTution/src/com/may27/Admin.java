@@ -11,7 +11,7 @@ public class Admin extends Emp{
 	
 	void  calSal(){
 		adminsal = basic_sal +allowance ;		
-		
+		System.out.println(adminsal);
 	}
 	
 	void show(){
