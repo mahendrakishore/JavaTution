@@ -1,9 +1,8 @@
 package com.may28.exceptionhandeling;
 
-public class ExceptionDemo {
-
+public class FinallyTest {
 	public static void main(String[] args) {
-		int a = 10 , b = 0 ;
+		int a = 10 , b = 10;//b = 0 ;
 		try{int div = a/b;
       System.out.println(div);
     int[] arr = {1,2,3};
@@ -11,8 +10,9 @@ public class ExceptionDemo {
 		catch(ArithmeticException ae ){
 			System.out.println("b cannot be 0");
 		}
-		System.out.println("end of try catch");
-		
-	} 
-	
+		//System.out.println("end of try catch");
+		finally{
+			System.out.println("finally block");
+		}
+	}
 }
