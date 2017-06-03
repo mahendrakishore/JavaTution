@@ -7,7 +7,7 @@ try{	if(age>18){
 		throw new AgeNotValidException("parameterrzed");
 	}
 	else{
-		System.out.println("u are not eligible");
+		System.out.println("u are  eligible");
 	}}
 catch(AgeNotValidException anve){
 	System.out.println(anve);
@@ -15,7 +15,7 @@ catch(AgeNotValidException anve){
 }
 }
 
-void validateWeight(int w1) throws WeightNotValid{
+void validateWeight(int w1) throws WeightNotValid {
 
 	if(w1<40){
 		throw new WeightNotValid();
@@ -25,7 +25,7 @@ void validateWeight(int w1) throws WeightNotValid{
 	}
 }
 	
-	public static void main(String[] args) throws WeightNotValid {
+	public static void main(String[] args)  {//throws WeightNotValid {
 		// TODO Auto-generated method stub
 		Test t = new Test();
 		t.validate(10);
