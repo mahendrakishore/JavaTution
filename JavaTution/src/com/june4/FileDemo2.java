@@ -13,6 +13,9 @@ public class FileDemo2 {
 	public static void main(String[] args) throws IOException  {
 		// TODO Auto-generated method stub
 		
+		FileWriter fw = new FileWriter("Test.api");
+		String s = "Hello";
+		fw.write(s);
 		FileReader fr = null;
 		try {
 			 fr = new FileReader("Demo.txt");
